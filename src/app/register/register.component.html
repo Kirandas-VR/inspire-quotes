@@ -1,0 +1,45 @@
+<div class="row" style="background-color:rgb(192, 176, 194) ;">
+    <div class="col-6">
+      <img class="ms-5"
+        src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-illustration-download-in-svg-png-gif-file-formats--app-developing-development-secure-mobile-webapp-and-pack-design-illustrations-3783954.png?f=webp"
+        height="400px"
+        alt="Registration Illustration"
+      />
+    </div>
+    <div class="col-6">
+      <h1 class="ms-2 mt-4">Register form</h1>
+      <form class="p-2" (submit)="register()">
+        <input
+          (change)="getName($event)"
+          type="text"
+          placeholder="Username"
+          [(ngModel)]="username"
+          name="username"
+          class="form-control mb-3"
+          required
+        />
+        <input
+          #userEmail
+          (change)="getEmail(userEmail)"
+          type="text"
+          placeholder="Email"
+          [(ngModel)]="email"
+          name="email"
+          class="form-control mb-3"
+          required
+        />
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+          class="form-control mb-3"
+          required
+        />
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary m-5">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  

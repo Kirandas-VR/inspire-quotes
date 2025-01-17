@@ -1,0 +1,15 @@
+ <div style="background-color: rgb(192, 176, 194) ;">
+ <h1 class="text-center mt-3">Quotes</h1>
+<div class="container " style="margin-left: 540px; margin-top: 50px; margin-bottom: 50px;">
+    <div class="row">
+      <!-- Iterate through quoteList -->
+      <div class="col-md-4 mb-4" *ngFor="let item of quoteList">
+        <div class="card p-3 shadow">
+          <h5 class="card-title">ID: {{ item.id }}</h5>
+          <p class="card-text">"{{ item.quote }}"</p>
+          <p class="text-muted">- {{ item.author }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="row" style="background-color:rgb(192, 176, 194);">
+    <div class="col-6">
+      <img class="ms-5"
+        src="https://cdni.iconscout.com/illustration/premium/thumb/login-page-illustration-download-in-svg-png-gif-file-formats--app-developing-development-secure-mobile-webapp-and-pack-design-illustrations-3783954.png?f=webp"
+        height="400px"
+        alt="Login Illustration"
+
+      />
+    </div>
+    <div class="col-6">
+        <h1 class="mt-4 ms-2">Login form</h1>
+      <form class="p-2" (submit)="login()">
+        <input
+          [(ngModel)]="email"
+          name="email"
+          type="email"
+          placeholder="Email"
+          class="form-control mb-3"
+          required
+        />
+        <input
+          [(ngModel)]="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+          class="form-control mb-3"
+          required
+        />
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary m-5">Login</button>
+          <p>
+            New to here?
+            <a [routerLink]="['/register']" class="text-primary">Register Now</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+  
